@@ -1,0 +1,22 @@
+#修改文章里面的图片
+update article_details set content=replace(content,'fms1.gddangjian.com','10.118.128.204:81');
+
+#修改首页封面图
+update art_channel set show_art_json=replace(show_art_json,'fms0.gddangjian.com','10.118.128.204');
+
+##修改app端图片显示
+update article set small_pic=replace(small_pic,'fms0.gddangjian.com','10.118.128.204');
+
+##修改视频图片
+update study_info set crlm_prc=replace(crlm_prc,'fms0.gddangjian.com','10.118.128.204');
+
+##修改视频链接
+update study_resource set url=replace(url,'fms0.gddangjian.com','10.118.128.204');
+
+##修改党标
+update org set bottom_logo=replace(bottom_logo,'fms0.gddangjian.com','10.118.128.204');
+
+update org set top_logo=replace(top_logo,'fms0.gddangjian.com','10.118.128.204');
+
+##修改管理员默认图片
+update user set img=replace(img,'fms0.gddangjian.com','10.118.128.204');
