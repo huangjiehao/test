@@ -1,0 +1,30 @@
+公安局党建系统测试环境权限：
+163.177.111.170   52222     
+
+root/Admin@123
+
+
+#修改文章里面的图片
+update article_details set content=replace(content,'163.177.111.170:81','192.168.149.100:81');
+
+
+#修改首页封面图
+update art_channel set show_art_json=replace(show_art_json,'163.177.111.170:8666','192.168.149.100:8666');
+
+
+##修改app端图片显示
+update article set small_pic=replace(small_pic,'163.177.111.170:8666','192.168.149.100:8666');
+
+
+##修改视频图片
+update study_info set crlm_prc=replace(crlm_prc,'163.177.111.170','192.168.149.100');
+
+
+##修改视频链接
+update study_resource set url=replace(url,'163.177.111.170','192.168.149.100');
+
+
+##修改党标
+update org set bottom_logo=replace(bottom_logo,'163.177.111.170','192.168.149.100');
+
+update org set top_logo=replace(top_logo,'163.177.111.170','192.168.149.100');

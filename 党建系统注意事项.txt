@@ -1,0 +1,6 @@
+fms服务器位置：
+fms1：/www/fms/php/ueditor/php/upload/image/
+fms0：/www/fms/java/uni_pb/webapps/upload/
+
+筛选数据库url：
+grep -ohr -E "http?://[a-zA-Z0-9\.\/_&=@$%?~#-]*"
